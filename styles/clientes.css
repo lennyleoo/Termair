@@ -1,0 +1,106 @@
+.termair-clientes {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #d9d9d9;
+  font-family: 'Stolzl', sans-serif;
+}
+
+.termair-clientes-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  background: #d9d9d9;
+  border-top: 2px solid #27a9e1;
+  border-bottom: 2px solid #27a9e1;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.termair-clientes-head {
+  width: 100%;
+  background: linear-gradient(90deg, #063F5C 0%, #9FE7F5 100%);
+  padding: 8px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.termair-clientes-title {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+}
+
+.termair-logos-slider {
+  width: 100%;
+  overflow: hidden;
+  background: #d9d9d9;
+}
+
+.termair-logos-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  padding: 8px 30px;
+  animation: termairLogosScroll 45s linear infinite;
+}
+
+.termair-logos-track img {
+  width: auto;
+  height: 46px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  opacity: 1;
+  filter: none;
+  transition: transform 0.3s ease;
+}
+
+.termair-logos-track img:hover {
+  transform: scale(1.04);
+}
+
+@keyframes termairLogosScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .termair-logos-track {
+    gap: 40px;
+    padding: 8px 22px;
+    animation-duration: 36s;
+  }
+
+  .termair-logos-track img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .termair-clientes-head {
+    padding: 7px 14px;
+  }
+
+  .termair-clientes-title {
+    font-size: 14px;
+  }
+
+  .termair-logos-track {
+    gap: 28px;
+    padding: 8px 18px;
+    animation-duration: 28s;
+  }
+
+  .termair-logos-track img {
+    height: 34px;
+  }
+}

@@ -1,0 +1,120 @@
+.termair-cert-banner {
+  width: 100%;
+  padding: 40px 20px;
+  background: #f8fafc;
+  border-top: 1px solid rgba(6, 63, 92, 0.08);
+  border-bottom: 1px solid rgba(6, 63, 92, 0.08);
+  font-family: 'Stolzl', sans-serif;
+}
+
+.termair-cert-banner-title {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 800;
+}
+
+.termair-cert-banner-text {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+}
+
+.termair-cert-banner-btn {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+}
+
+.termair-cert-banner-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.termair-cert-banner-content {
+  max-width: 760px;
+}
+
+.termair-cert-banner-title {
+  margin: 0 0 14px 0;
+  color: #063f5c;
+  font-size: 2.2rem;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.termair-cert-banner-text {
+  margin: 0;
+  color: #419ebd;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.termair-cert-banner-action {
+  flex-shrink: 0;
+}
+
+.termair-cert-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 230px;
+  padding: 15px 28px;
+  background-color: #ffa900;
+  color: #063f5c;
+  text-decoration: none;
+  font-size: 0.9rem;
+  
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.termair-cert-banner-btn:hover {
+  background-color: #ff8800;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .termair-cert-banner-container {
+    padding: 0 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .termair-cert-banner-title {
+    font-size: 1.9rem;
+  }
+
+  .termair-cert-banner-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .termair-cert-banner {
+    padding: 30px 0;
+  }
+
+  .termair-cert-banner-container {
+    padding: 0 20px;
+  }
+
+  .termair-cert-banner-title {
+    font-size: 1.45rem;
+  }
+
+  .termair-cert-banner-text {
+    font-size: 0.96rem;
+  }
+
+  .termair-cert-banner-btn {
+    width: 100%;
+    min-width: 100%;
+  }
+}

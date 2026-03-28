@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+}
+
+.termair-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #063f5c;
+  z-index: 99999;
+}
+
+.termair-nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.termair-nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.termair-nav-logo img {
+  height: 42px;
+  display: block;
+}
+
+.termair-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.termair-nav-menu a,
+.termair-dropdown-toggle {
+  color: #9fe7f5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.3s;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+}
+
+.termair-nav-menu a:hover,
+.termair-dropdown-toggle:hover {
+  color: #ffa900;
+}
+
+.termair-nav-dropdown {
+  position: relative;
+}
+
+.termair-dropdown-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  min-width: 240px;
+  padding: 10px 0;
+  background: #063f5c;
+  border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.termair-dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  color: #9fe7f5;
+}
+
+.termair-dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffa900;
+}
+
+.termair-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+@media (min-width: 769px) {
+  .termair-nav-dropdown:hover .termair-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .termair-nav-toggle {
+    display: block;
+  }
+
+  .termair-nav-menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #063f5c;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  .termair-nav-menu.active {
+    display: flex;
+  }
+
+  .termair-nav-menu a,
+  .termair-dropdown-toggle {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .termair-nav-dropdown {
+    width: 100%;
+  }
+
+  .termair-dropdown-menu {
+    position: static;
+    min-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    transition: all 0.3s ease;
+  }
+
+  .termair-nav-dropdown.active .termair-dropdown-menu {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    padding: 10px 0;
+  }
+}

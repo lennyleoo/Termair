@@ -1,0 +1,165 @@
+.termair-hero,
+.termair-hero * {
+  box-sizing: border-box;
+}
+/* =========================
+   FONTS HERO
+========================= */
+
+.termair-hero-right h1 {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 800;
+}
+
+.termair-hero-right p {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+}
+
+.termair-hero-btn {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+}
+
+.termair-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('../img/FONDOescr.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.termair-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.termair-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.termair-hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.termair-hero-icon {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.termair-hero-logo {
+  width: 240px;
+  height: auto;
+  display: block;
+}
+
+.termair-hero-right {
+  max-width: 650px;
+}
+
+.termair-hero-right h1 {
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.termair-hero-right p {
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.termair-hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #ffa900;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.termair-hero-btn:hover {
+  background: #f27f0c;
+}
+
+@media (max-width: 992px) {
+  .termair-hero {
+    min-height: 100vh;
+  }
+
+  .termair-hero-container {
+    padding: 60px 30px;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .termair-hero-left {
+    align-items: center;
+  }
+
+  .termair-hero-right h1 {
+    font-size: 36px;
+  }
+
+  .termair-hero-right p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .termair-hero {
+    min-height: 100vh;
+  }
+
+  .termair-hero-container {
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  .termair-hero-icon {
+    width: 90px;
+  }
+
+  .termair-hero-logo {
+    width: 180px;
+  }
+
+  .termair-hero-right h1 {
+    font-size: 28px;
+  }
+
+  .termair-hero-right p {
+    font-size: 16px;
+  }
+
+  .termair-hero-btn {
+    padding: 12px 24px;
+  }
+}

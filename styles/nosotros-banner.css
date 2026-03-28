@@ -1,0 +1,141 @@
+.termair-nosotros-banner,
+.termair-nosotros-banner * {
+  box-sizing: border-box;
+}
+
+.termair-nosotros-banner {
+  width: 100%;
+  padding: 70px 20px;
+  background: #efefef;
+}
+
+/* =========================
+   FONTS NOSOTROS
+========================= */
+
+.termair-nosotros-banner-title {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 800;
+}
+
+.termair-nosotros-banner-text {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+}
+
+.termair-nosotros-banner-text strong {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 800;
+}
+
+.termair-nosotros-banner-btn {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+}
+
+/* =========================
+   RESTO (igual)
+========================= */
+
+.termair-nosotros-banner-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.termair-nosotros-banner-title {
+  margin: 0 auto;
+  max-width: 860px;
+  color: #4a4a4a;
+  font-size: 2.55rem;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.termair-nosotros-banner-line {
+  width: 52px;
+  height: 6px;
+  margin: 18px auto 26px;
+  background: #2f9ec4;
+}
+
+.termair-nosotros-banner-text {
+  margin: 0 auto;
+  max-width: 900px;
+  color: #5b5b5b;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.termair-nosotros-banner-text strong {
+  color: #4a4a4a;
+}
+
+.termair-nosotros-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  margin-top: 34px;
+  padding: 15px 26px;
+  background: #0b4f6c;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.termair-nosotros-banner-btn:hover {
+  background: #083d54;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .termair-nosotros-banner {
+    padding: 56px 20px;
+  }
+
+  .termair-nosotros-banner-title {
+    max-width: 760px;
+    font-size: 2rem;
+  }
+
+  .termair-nosotros-banner-text {
+    max-width: 760px;
+    font-size: 1.02rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .termair-nosotros-banner {
+    padding: 44px 16px;
+  }
+
+  .termair-nosotros-banner-container {
+    padding: 0 6px;
+  }
+
+  .termair-nosotros-banner-title {
+    font-size: 1.45rem;
+    line-height: 1.18;
+  }
+
+  .termair-nosotros-banner-line {
+    width: 44px;
+    height: 5px;
+    margin: 16px auto 22px;
+  }
+
+  .termair-nosotros-banner-text {
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .termair-nosotros-banner-btn {
+    width: 100%;
+    max-width: 260px;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+}

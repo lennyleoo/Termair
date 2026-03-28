@@ -1,0 +1,84 @@
+.termair-contacto,
+.termair-contacto * {
+  box-sizing: border-box;
+}
+
+.termair-contacto {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.termair-contacto-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.termair-contacto-title {
+  margin-bottom: 10px;
+  color: #063f5c;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.termair-contacto-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #419ebd;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.termair-contacto-text::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 15px auto 0;
+  background-color: #ffa900;
+}
+
+.termair-contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.termair-contacto-card {
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.termair-contacto-card:hover {
+  transform: translateY(-5px);
+}
+
+.termair-contacto-subtitle {
+  margin-bottom: 10px;
+  color: #063f5c;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.termair-contacto-data {
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.termair-contacto-data strong {
+  color: #063f5c;
+}
+
+@media (max-width: 768px) {
+  .termair-contacto-title {
+    font-size: 1.8rem;
+  }
+}

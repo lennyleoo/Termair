@@ -1,0 +1,33 @@
+/* =========================
+   ZALANDO
+========================= */
+@font-face {
+  font-family: 'Zalando Sans SemiExpanded';
+  src: url('../fonts/ZalandoSansSemiExpanded-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zalando Sans SemiExpanded';
+  src: url('../fonts/ZalandoSansSemiExpanded-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* =========================
+   STOLZL
+========================= */
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../fonts/stolzl_book.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../fonts/stolzl_medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}

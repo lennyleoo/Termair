@@ -1,0 +1,194 @@
+.galeria-termair-obras {
+  font-family: 'Stolzl', sans-serif;
+  padding: 140px 20px 70px;
+  background-color: #ffffff;
+}
+
+.galeria-titulo-obras {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  text-align: center;
+  color: #063f5c;
+  font-size: 2.5rem;
+  margin: 0 0 14px 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.galeria-subtitulo-obras {
+  text-align: center;
+  color: #419ebd;
+  margin: 0 auto 30px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  max-width: 760px;
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+.galeria-subtitulo-obras::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffa900;
+  margin: 18px auto 0;
+}
+
+.grid-obras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.obra-card {
+  position: relative;
+  min-height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 30px rgba(6, 63, 92, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.obra-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(6, 63, 92, 0.2);
+}
+
+.obra-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 63, 92, 0.2) 0%,
+      rgba(6, 63, 92, 0.45) 45%,
+      rgba(6, 63, 92, 0.88) 100%
+    );
+  z-index: 1;
+}
+
+.obra-info {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 26px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.obra-nombre {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-size: 1.32rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+}
+
+.obra-categoria {
+  font-family: 'Stolzl', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #9fe7f5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.obra-btn {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  align-self: flex-start;
+  padding: 12px 22px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #ffa900;
+  color: #063f5c;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.obra-btn:hover {
+  background-color: #ff8800;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* IMÁGENES */
+.obra-card-corporativos {
+  background-image: url('../../../img/YPF.jpg');
+}
+
+.obra-card-bancos {
+  background-image: url('../../../img/BancoProv.jpg');
+}
+
+.obra-card-gubernamentales {
+  background-image: url('../../../img/casaDeGobiernopost.jpg');
+}
+
+.obra-card-hidroelectricas {
+  background-image: url('../../../img/piedradelaguila.jpg');
+}
+
+.obra-card-entretenimiento {
+  background-image: url('../../../img/TeatroColon.jpg');
+}
+
+@media (max-width: 992px) {
+  .galeria-termair-obras {
+    padding: 130px 20px 60px;
+  }
+
+  .obra-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria-termair-obras {
+    padding: 120px 16px 50px;
+  }
+
+  .galeria-titulo-obras {
+    font-size: 1.9rem;
+  }
+
+  .galeria-subtitulo-obras {
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+  }
+
+  .grid-obras {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .obra-card {
+    min-height: 280px;
+  }
+
+  .obra-info {
+    padding: 22px 20px 20px;
+  }
+
+  .obra-nombre {
+    font-size: 1.15rem;
+  }
+
+  .obra-btn {
+    padding: 11px 20px;
+    font-size: 0.76rem;
+  }
+}

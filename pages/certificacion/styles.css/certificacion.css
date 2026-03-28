@@ -1,0 +1,358 @@
+/* =========================
+   BASE
+========================= */
+.cert-page {
+  font-family: 'Stolzl', sans-serif;
+  background-color: #ffffff;
+  color: #555;
+}
+
+.cert-titulo,
+.cert-card-title,
+.cert-section-title,
+.cert-cierre-title {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.cert-termair {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.cert-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cert-kicker,
+.cert-section-kicker {
+  margin: 0 0 10px;
+  color: #ffa900;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cert-titulo {
+  color: #063f5c;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.cert-texto {
+  color: #419ebd;
+  max-width: 760px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.cert-texto::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffa900;
+  margin: 18px auto 0;
+  border-radius: 999px;
+}
+
+.cert-detalle {
+  color: #555;
+  max-width: 780px;
+  margin: 0 auto 18px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.cert-detalle:last-of-type {
+  margin-bottom: 38px;
+}
+
+/* =========================
+   IMAGEN
+========================= */
+.cert-img-wrapper {
+  max-width: 440px;
+  margin: 0 auto 55px;
+}
+
+.cert-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s ease;
+}
+
+.cert-img-wrapper img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   BLOQUES
+========================= */
+.cert-bloques {
+  margin-top: 10px;
+}
+
+.cert-bloques-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cert-card {
+  background: #f9f9f9;
+  border-radius: 18px;
+  padding: 28px 24px;
+  text-align: left;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #ffa900;
+}
+
+.cert-card-title {
+  margin: 0 0 14px;
+  color: #063f5c;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.cert-card-text {
+  margin: 0 0 12px;
+  color: #555;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+/* =========================
+   LISTAS
+========================= */
+.cert-list {
+  margin: 0;
+  padding-left: 18px;
+  text-align: left;
+}
+
+.cert-list li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.cert-list-centered {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* =========================
+   ALCANCE
+========================= */
+.cert-alcance {
+  margin-top: 34px;
+}
+
+.cert-alcance-box {
+  background: linear-gradient(135deg, #ffffff 0%, #f4f8fa 100%);
+  border-radius: 22px;
+  padding: 34px 30px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #ffa900;
+}
+
+.cert-section-heading {
+  margin-bottom: 22px;
+}
+
+.cert-section-title {
+  margin: 0;
+  color: #063f5c;
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.cert-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cert-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(6, 63, 92, 0.08);
+  color: #063f5c;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+/* =========================
+   POLITICA
+========================= */
+.cert-politica {
+  margin-top: 28px;
+}
+
+.cert-politica-box {
+  background: #f9f9f9;
+  border-radius: 22px;
+  padding: 34px 30px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.cert-politica-text {
+  max-width: 780px;
+  margin: 0 auto 14px;
+  color: #555;
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.cert-politica-text:last-of-type {
+  margin-bottom: 18px;
+}
+
+/* =========================
+   CIERRE
+========================= */
+.cert-cierre {
+  margin-top: 34px;
+}
+
+.cert-cierre-box {
+  background: linear-gradient(135deg, #063f5c 0%, #0b5a82 100%);
+  border-radius: 22px;
+  padding: 34px 28px;
+  box-shadow: 0 14px 34px rgba(6, 63, 92, 0.14);
+}
+
+.cert-cierre-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+  .cert-termair {
+    padding: 70px 20px;
+  }
+
+  .cert-bloques-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-section-title {
+    font-size: 1.65rem;
+  }
+
+  .cert-cierre-title {
+    font-size: 1.55rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .cert-termair {
+    padding: 56px 18px;
+  }
+
+  .cert-titulo {
+    font-size: 1.85rem;
+  }
+
+  .cert-texto,
+  .cert-detalle,
+  .cert-card-text,
+  .cert-politica-text,
+  .cert-list li {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .cert-img-wrapper {
+    max-width: 100%;
+    margin: 0 auto 38px;
+  }
+
+  .cert-img-wrapper img {
+    border-radius: 14px;
+  }
+
+  .cert-card,
+  .cert-alcance-box,
+  .cert-politica-box,
+  .cert-cierre-box {
+    border-radius: 18px;
+    padding: 24px 20px;
+  }
+
+  .cert-card-title {
+    font-size: 1.15rem;
+  }
+
+  .cert-section-title {
+    font-size: 1.4rem;
+  }
+
+  .cert-tags {
+    gap: 10px;
+  }
+
+  .cert-tags span {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 14px;
+  }
+
+  .cert-cierre-title {
+    font-size: 1.32rem;
+  }
+}
+
+/* =========================
+   MOBILE SMALL
+========================= */
+@media (max-width: 480px) {
+  .cert-titulo {
+    font-size: 1.65rem;
+  }
+
+  .cert-card-title {
+    font-size: 1.08rem;
+  }
+
+  .cert-section-title {
+    font-size: 1.26rem;
+  }
+}

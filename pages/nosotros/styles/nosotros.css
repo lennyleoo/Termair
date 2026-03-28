@@ -1,0 +1,226 @@
+/* =========================
+   BASE
+========================= */
+.nosotros-page {
+  font-family: 'Stolzl', sans-serif;
+  color: #555;
+  background: #f7f7f7;
+}
+
+.nosotros-main-title,
+.nosotros-card-content h2,
+.nosotros-section-heading h2 {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.nosotros-shell {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.nosotros-kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffa900;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   HERO
+========================= */
+.nosotros-hero {
+  background:
+    linear-gradient(135deg, rgba(6, 63, 92, 0.95), rgba(6, 63, 92, 0.8)),
+    url('https://termair.com/wp-content/uploads/2026/03/Gemini_Generated_Image_e5atbqe5atbqe5at.png') center/cover;
+}
+
+.nosotros-hero-content {
+  padding: 120px 0 80px;
+}
+
+.nosotros-main-title {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  max-width: 800px;
+}
+
+.nosotros-lead {
+  color: rgba(255,255,255,0.9);
+  margin-top: 20px;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* =========================
+   INTRO
+========================= */
+.nosotros-intro {
+  margin-top: -30px;
+}
+
+.nosotros-intro-box {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  border-top: 4px solid #ffa900;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   GRID (CLAVE)
+========================= */
+.nosotros-sections {
+  padding: 60px 0;
+}
+
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   CARD
+========================= */
+.nosotros-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEN CHICA */
+.nosotros-card-image {
+  height: 140px;
+}
+
+.nosotros-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.nosotros-card-content {
+  padding: 20px;
+}
+
+.nosotros-card-content h2 {
+  font-size: 1.2rem;
+  color: #063f5c;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.nosotros-card-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* LISTA */
+.nosotros-list {
+  margin-top: 10px;
+  padding-left: 16px;
+}
+
+.nosotros-list li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+/* =========================
+   CAPACIDAD
+========================= */
+.nosotros-capacidad {
+  padding-bottom: 70px;
+}
+
+.nosotros-capacidad-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  border-left: 4px solid #ffa900;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.nosotros-section-heading h2 {
+  color: #063f5c;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+/* TAGS */
+.nosotros-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nosotros-tags span {
+  background: rgba(6,63,92,0.08);
+  color: #063f5c;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+  .nosotros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .nosotros-shell {
+    padding: 0 18px;
+  }
+
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nosotros-card-image {
+    height: 130px;
+  }
+
+  .nosotros-main-title {
+    font-size: 2rem;
+  }
+
+  .nosotros-capacidad-box {
+    padding: 20px;
+  }
+
+  .nosotros-tags span {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =========================
+   MOBILE SMALL
+========================= */
+@media (max-width: 480px) {
+  .nosotros-card-image {
+    height: 120px;
+  }
+}

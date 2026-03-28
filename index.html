@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termair S.A.</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/nosotros-banner.css">
+  <link rel="stylesheet" href="./styles/innovacion-banner.css">
+  <link rel="stylesheet" href="./styles/cert-banner.css">
+  <link rel="stylesheet" href="./styles/obras-galery.css">
+  <link rel="stylesheet" href="./styles/clientes.css">
+  <link rel="stylesheet" href="./styles/contacto.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="termair-navbar">
+    <div class="termair-nav-container">
+
+      <div class="termair-nav-logo">
+        <a href="#">
+          <img src="./img/logo.blanco.png" alt="Termair">
+        </a>
+      </div>
+
+      <nav class="termair-nav-menu" id="termairNavMenu">
+        <a href="#home">Home</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#innovacion">Innovación</a>
+        <a href="#certificacion">Certificación</a>
+
+        <div class="termair-nav-dropdown" id="termairDropdownObras">
+          <button type="button" class="termair-dropdown-toggle" id="termairDropdownToggle">
+            Obras <span class="termair-dropdown-arrow">▾</span>
+          </button>
+
+          <div class="termair-dropdown-menu">
+            <a href="#obras">Ver todas</a>
+            <a href="#obras">Corporativos y oficinas</a>
+            <a href="#obras">Bancos y sanatorios</a>
+            <a href="#obras">Centrales hidroeléctricas</a>
+            <a href="#obras">Edificios gubernamentales</a>
+            <a href="#obras">Industria del entretenimiento</a>
+          </div>
+        </div>
+
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button type="button" class="termair-nav-toggle" id="termairNavToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOME / HERO -->
+    <section class="termair-hero" id="home">
+      <div class="termair-hero-overlay"></div>
+
+      <div class="termair-hero-container">
+        <div class="termair-hero-left">
+          <img
+            class="termair-hero-icon"
+            src="./img/isotipo.png"
+            alt="Logo Termair"
+          >
+          <img
+            class="termair-hero-logo"
+            src="./img/logo.blanco.png"
+            alt="Termair S.A."
+          >
+        </div>
+
+        <div class="termair-hero-right">
+          <h1>Ingeniería termomecánica para proyectos que no admiten margen de error</h1>
+
+          <p>
+            Desarrollamos obras termomecánicas, piping y mantenimiento industrial para compañías que necesitan precisión, experiencia y cumplimiento real.
+            <br><br>
+            +60 años acompañando proyectos industriales a gran escala en Argentina y en el Exterior.
+          </p>
+
+          <a href="#obras" class="termair-hero-btn">Ver Proyectos</a>
+        </div>
+      </div>
+    </section>
+
+      <section class="termair-clientes">
+      <div class="termair-clientes-container">
+
+        <div class="termair-clientes-head">
+          <h2 class="termair-clientes-title">Clientes que confiaron en nosotros</h2>
+        </div>
+
+        <div class="termair-logos-slider">
+          <div class="termair-logos-track">
+            <img src="./img/Acindar.png" alt="Acindar">
+            <img src="./img/ADUANAS.png" alt="Aduanas">
+            <img src="./img/aerolineas.png" alt="Aerolíneas">
+            <img src="./img/afip.png" alt="AFIP">
+            <img src="./img/YPF.png" alt="YPF">
+            <img src="./img/Redlink.png" alt="Red Link">
+            <img src="./img/Ministerio de Educación GCABA.png" alt="Ministerio de Educación GCABA">
+            <img src="./img/BancoMacro.png" alt="Banco Macro">
+            <img src="./img/casa rosada.png" alt="Casa Rosada">
+            <img src="./img/Telecom.png" alt="Telecom">
+            <img src="./img/Subte.png" alt="Subte">
+            <img src="./img/Supervielle.png" alt="Supervielle">
+
+            <!-- duplicados para loop -->
+            <img src="./img/Acindar.png" alt="Acindar">
+            <img src="./img/ADUANAS.png" alt="Aduanas">
+            <img src="./img/aerolineas.png" alt="Aerolíneas">
+            <img src="./img/afip.png" alt="AFIP">
+            <img src="./img/YPF.png" alt="YPF">
+            <img src="./img/Redlink.png" alt="Red Link">
+            <img src="./img/Ministerio de Educación GCABA.png" alt="Ministerio de Educación GCABA">
+            <img src="./img/BancoMacro.png" alt="Banco Macro">
+            <img src="./img/casa rosada.png" alt="Casa Rosada">
+            <img src="./img/Telecom.png" alt="Telecom">
+            <img src="./img/Subte.png" alt="Subte">
+            <img src="./img/Supervielle.png" alt="Supervielle">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="termair-nosotros-banner" id="nosotros">
+      <div class="termair-nosotros-banner-container">
+
+        <h2 class="termair-nosotros-banner-title">
+          Más de 60 años impulsando proyectos de ingeniería de alta complejidad
+        </h2>
+
+        <div class="termair-nosotros-banner-line"></div>
+
+        <p class="termair-nosotros-banner-text">
+          <strong>Desde 1958</strong> desarrollamos soluciones en instalaciones termomecánicas, infraestructura y servicios integrales. Trabajamos en proyectos industriales, obras públicas y edificios de gran escala, combinando experiencia técnica, innovación y capacidad operativa.
+        </p>
+
+        <a href="#nosotros" class="termair-nosotros-banner-btn">Sobre Termair</a>
+
+      </div>
+    </section>
+
+    <!-- INNOVACIÓN -->
+    <section class="termair-innovacion-banner" id="innovacion">
+      <div class="termair-innovacion-banner-overlay"></div>
+
+      <div class="termair-innovacion-banner-container">
+        <div class="termair-innovacion-banner-content">
+          <h2 class="termair-innovacion-banner-title">
+            Evolucionamos con la industria
+          </h2>
+
+          <p class="termair-innovacion-banner-text">
+            Incorporamos nuevas tecnologías, procesos y soluciones para responder a los desafíos actuales del sector.
+          </p>
+        </div>
+
+        <div class="termair-innovacion-banner-action">
+          <a href="#innovacion" class="termair-innovacion-banner-btn">
+            Ver Innovación
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIÓN -->
+    <section class="termair-cert-banner" id="certificacion">
+      <div class="termair-cert-banner-container">
+
+        <div class="termair-cert-banner-content">
+          <h2 class="termair-cert-banner-title">
+            Calidad certificada, no solo declarada
+          </h2>
+
+          <p class="termair-cert-banner-text">
+            Contamos con certificación ISO 9001, que respalda nuestros procesos y garantiza estándares de calidad en cada proyecto.
+          </p>
+        </div>
+
+        <div class="termair-cert-banner-action">
+          <a href="#certificacion" class="termair-cert-banner-btn">
+            Ver Certificación
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="termair-obras-gallery" id="obras">
+  <div class="termair-obras-gallery-container">
+
+    <div class="termair-obras-gallery-header">
+      <div class="termair-obras-gallery-header-left">
+        <p class="termair-obras-gallery-subtitle">
+          Trabajamos con industrias y proyectos de gran escala
+        </p>
+
+        <h2 class="termair-obras-gallery-title">
+          Proyectos de ingeniería para entornos de alta exigencia
+        </h2>
+      </div>
+
+      <div class="termair-obras-gallery-header-right">
+        <p class="termair-obras-gallery-text">
+          Acompañamos a empresas e instituciones en el desarrollo de proyectos completos, combinando innovación, experiencia técnica y capacidad operativa en múltiples sectores.
+        </p>
+      </div>
+    </div>
+
+    <div class="termair-obras-grid">
+
+      <div class="termair-obra-card">
+        <div class="termair-obra-thumb-wrap">
+          <img
+            class="termair-obra-thumb"
+            src="./img/bancoNacionArg.jpg"
+            alt="Bancos y sanatorios"
+          >
+        </div>
+
+        <div class="termair-obra-info">
+          <p class="termair-obra-name">Bancos y sanatorios</p>
+          <p class="termair-obra-category">Salud &amp; Financiero</p>
+          <a href="#obras" class="termair-obra-btn">Explorar Proyectos</a>
+        </div>
+      </div>
+
+      <div class="termair-obra-card">
+        <div class="termair-obra-thumb-wrap">
+          <img
+            class="termair-obra-thumb"
+            src="./img/YPF.jpg"
+            alt="Corporativos y oficinas"
+          >
+        </div>
+
+        <div class="termair-obra-info">
+          <p class="termair-obra-name">Corporativos y oficinas</p>
+          <p class="termair-obra-category">Oficinas &amp; Corporate</p>
+          <a href="#obras" class="termair-obra-btn">Explorar Proyectos</a>
+        </div>
+      </div>
+
+      <div class="termair-obra-card">
+        <div class="termair-obra-thumb-wrap">
+          <img
+            class="termair-obra-thumb"
+            src="./img/piedradelaguila.jpg"
+            alt="Centrales hidroeléctricas"
+          >
+        </div>
+
+        <div class="termair-obra-info">
+          <p class="termair-obra-name">Centrales hidroeléctricas</p>
+          <p class="termair-obra-category">Energía</p>
+          <a href="#obras" class="termair-obra-btn">Explorar Proyectos</a>
+        </div>
+      </div>
+
+      <div class="termair-obra-card">
+        <div class="termair-obra-thumb-wrap">
+          <img
+            class="termair-obra-thumb"
+            src="./img/casaDeGobiernopost.jpg"
+            alt="Edificios gubernamentales"
+          >
+        </div>
+
+        <div class="termair-obra-info">
+          <p class="termair-obra-name">Edificios gubernamentales</p>
+          <p class="termair-obra-category">Sector público</p>
+          <a href="#obras" class="termair-obra-btn">Explorar Proyectos</a>
+        </div>
+      </div>
+
+      <div class="termair-obra-card">
+        <div class="termair-obra-thumb-wrap">
+          <img
+            class="termair-obra-thumb"
+            src="./img/TeatroColon.jpg"
+            alt="Industria del entretenimiento"
+          >
+        </div>
+
+        <div class="termair-obra-info">
+          <p class="termair-obra-name">Industria del entretenimiento</p>
+          <p class="termair-obra-category">Eventos &amp; Espectáculos</p>
+          <a href="#obras" class="termair-obra-btn">Explorar Proyectos</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- CLIENTES -->
+    <section class="termair-clientes">
+      <div class="termair-clientes-container">
+
+        <div class="termair-clientes-head">
+          <h2 class="termair-clientes-title">Clientes que confiaron en nosotros</h2>
+        </div>
+
+        <div class="termair-logos-slider">
+          <div class="termair-logos-track">
+            <img src="./img/Acindar.png" alt="Acindar">
+            <img src="./img/ADUANAS.png" alt="Aduanas">
+            <img src="./img/aerolineas.png" alt="Aerolíneas">
+            <img src="./img/afip.png" alt="AFIP">
+            <img src="./img/YPF.png" alt="YPF">
+            <img src="./img/Redlink.png" alt="Red Link">
+            <img src="./img/Ministerio de Educación GCABA.png" alt="Ministerio de Educación GCABA">
+            <img src="./img/BancoMacro.png" alt="Banco Macro">
+            <img src="./img/casa rosada.png" alt="Casa Rosada">
+            <img src="./img/Telecom.png" alt="Telecom">
+            <img src="./img/Subte.png" alt="Subte">
+            <img src="./img/Supervielle.png" alt="Supervielle">
+
+            <!-- duplicados para loop -->
+            <img src="./img/Acindar.png" alt="Acindar">
+            <img src="./img/ADUANAS.png" alt="Aduanas">
+            <img src="./img/aerolineas.png" alt="Aerolíneas">
+            <img src="./img/afip.png" alt="AFIP">
+            <img src="./img/YPF.png" alt="YPF">
+            <img src="./img/Redlink.png" alt="Red Link">
+            <img src="./img/Ministerio de Educación GCABA.png" alt="Ministerio de Educación GCABA">
+            <img src="./img/BancoMacro.png" alt="Banco Macro">
+            <img src="./img/casa rosada.png" alt="Casa Rosada">
+            <img src="./img/Telecom.png" alt="Telecom">
+            <img src="./img/Subte.png" alt="Subte">
+            <img src="./img/Supervielle.png" alt="Supervielle">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="termair-contacto" id="contacto">
+      <div class="termair-contacto-container">
+
+        <h2 class="termair-contacto-title">Contacto</h2>
+
+        <p class="termair-contacto-text">
+          Contáctenos para recibir asesoramiento profesional y una propuesta adaptada a sus necesidades.
+        </p>
+
+        <div class="termair-contacto-grid">
+
+          <div class="termair-contacto-card">
+            <p class="termair-contacto-subtitle">Información de contacto</p>
+            <p class="termair-contacto-data">
+              <strong>Email:</strong><br>
+              info@termair.com
+            </p>
+          </div>
+
+          <div class="termair-contacto-card">
+            <p class="termair-contacto-subtitle">Teléfonos</p>
+            <p class="termair-contacto-data">
+              Tel: 05411 4545-5559<br>
+              / 1011
+            </p>
+          </div>
+
+          <div class="termair-contacto-card">
+            <p class="termair-contacto-subtitle">Dirección</p>
+            <p class="termair-contacto-data">
+              José Pascual Tamborini 3140<br>
+              Buenos Aires
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="termair-footer">
+    <div class="termair-footer-container">
+
+      <div class="termair-footer-left">
+        <p class="termair-footer-brand">Termair S.A</p>
+        <p class="termair-footer-copy">© 2026 Todos los derechos reservados.</p>
+      </div>
+
+      <div class="termair-footer-center">
+        <a href="#home">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#innovacion">Innovación</a>
+        <a href="#obras">Obras</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="termair-footer-right">
+        <a href="#" class="termair-footer-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="white">
+            <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm4.8-3.3a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="termair-footer-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="white">
+            <path d="M4.98 3.5A2.48 2.48 0 1 0 5 8.5 2.48 2.48 0 0 0 4.98 3.5zM3 9h4v12H3zm7 0h3.6v1.7h.1c.5-.9 1.7-1.9 3.6-1.9 3.8 0 4.5 2.5 4.5 5.7V21h-4v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

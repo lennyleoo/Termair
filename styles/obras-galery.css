@@ -1,0 +1,256 @@
+.termair-obras-gallery {
+  width: 100%;
+  margin: 0;
+  padding: 40px 0 30px;
+  box-sizing: border-box;
+  background: #f3f3f3;
+}
+
+/* =========================
+   FONTS OBRAS
+========================= */
+
+.termair-obras-gallery-subtitle {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+}
+
+.termair-obras-gallery-title {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 700;
+}
+
+.termair-obras-gallery-text {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+}
+
+.termair-obra-name {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 800;
+}
+
+.termair-obra-category {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+}
+
+.termair-obra-btn {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 500;
+}
+
+/* =========================
+   ESTRUCTURA
+========================= */
+
+.termair-obras-gallery-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.termair-obras-gallery-header {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 44px;
+  align-items: start;
+  margin-bottom: 34px;
+}
+
+.termair-obras-gallery-subtitle {
+  margin: 0 0 12px;
+  font-size: 19px;
+  line-height: 1.25;
+  color: #43a6cf;
+}
+
+.termair-obras-gallery-title {
+  margin: 0;
+  font-size: 35px;
+  line-height: 1.05;
+  color: #3f3f3f;
+  letter-spacing: -0.4px;
+  max-width: 720px;
+}
+
+.termair-obras-gallery-text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #555555;
+  max-width: 520px;
+}
+
+.termair-obras-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.termair-obra-card {
+  background: #ffffff;
+  overflow: hidden;
+  min-width: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.termair-obra-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+}
+
+.termair-obra-thumb-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 0.82;
+  overflow: hidden;
+  background: #dcdcdc;
+}
+
+.termair-obra-thumb {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.termair-obra-info {
+  padding: 14px 13px 18px;
+  background: #ffffff;
+}
+
+.termair-obra-name {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.15;
+  color: #0a4260;
+}
+
+.termair-obra-category {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #4b6170;
+}
+
+.termair-obra-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #f2a900;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.termair-obra-btn::after {
+  content: "›";
+  font-size: 18px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.termair-obra-btn:hover {
+  opacity: 0.85;
+  transform: translateX(2px);
+}
+
+@media (max-width: 1180px) {
+  .termair-obras-gallery {
+    padding: 36px 0 26px;
+  }
+
+  .termair-obras-gallery-container {
+    padding: 0 30px;
+  }
+
+  .termair-obras-gallery-header {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 28px;
+  }
+
+  .termair-obras-gallery-title {
+    font-size: 31px;
+    max-width: 100%;
+  }
+
+  .termair-obras-gallery-text {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .termair-obras-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .termair-obras-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .termair-obra-thumb-wrap {
+    aspect-ratio: 1 / 0.78;
+  }
+
+  .termair-obra-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .termair-obras-gallery {
+    padding: 28px 0 20px;
+  }
+
+  .termair-obras-gallery-container {
+    padding: 0 20px;
+  }
+
+  .termair-obras-gallery-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .termair-obras-gallery-title {
+    font-size: 27px;
+    line-height: 1.08;
+  }
+
+  .termair-obras-gallery-text {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .termair-obras-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .termair-obra-thumb-wrap {
+    aspect-ratio: 1 / 0.76;
+  }
+
+  .termair-obra-info {
+    padding: 16px 15px 20px;
+  }
+
+  .termair-obra-name {
+    font-size: 22px;
+  }
+
+  .termair-obra-category {
+    font-size: 15px;
+  }
+
+  .termair-obra-btn {
+    font-size: 15px;
+  }
+}
