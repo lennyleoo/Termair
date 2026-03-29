@@ -75,11 +75,13 @@
   background: linear-gradient(transparent, rgba(6, 63, 92, 0.95));
   color: white;
   transform: translateY(10px);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
 }
 
 .obra-card-hidro:hover .obra-info-hidro {
   transform: translateY(0);
+  opacity: 0;
 }
 
 .obra-nombre-hidro {
@@ -100,6 +102,30 @@
   font-weight: 500;
 }
 
+.obra-descripcion-hidro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 50px);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.obra-card-hidro:hover .obra-descripcion-hidro {
+  opacity: 1;
+}
+
+.obra-descripcion-hidro p {
+  margin: 0;
+  font-family: 'Stolzl', sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
   .galeria-termair-hidro {
     padding: 120px 16px 36px;
@@ -115,5 +141,14 @@
 
   .obra-card-hidro {
     height: 250px;
+  }
+
+  .obra-descripcion-hidro {
+    width: calc(100% - 30px);
+  }
+
+  .obra-descripcion-hidro p {
+    font-size: 0.76rem;
+    line-height: 1.35;
   }
 }
