@@ -75,11 +75,13 @@
   background: linear-gradient(transparent, rgba(6, 63, 92, 0.9));
   color: white;
   transform: translateY(20px);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
 }
 
 .obra-card-gov:hover .obra-info-gov {
   transform: translateY(0);
+  opacity: 0;
 }
 
 .obra-nombre-gov {
@@ -100,6 +102,30 @@
   font-weight: 400;
 }
 
+.obra-descripcion-gov {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.obra-card-gov:hover .obra-descripcion-gov {
+  opacity: 1;
+}
+
+.obra-descripcion-gov p {
+  margin: 0;
+  font-family: 'Stolzl', sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
   .galeria-termair-gov {
     padding: 120px 16px 36px;
@@ -111,5 +137,14 @@
 
   .grid-obras-gov {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .obra-descripcion-gov {
+    width: calc(100% - 30px);
+  }
+
+  .obra-descripcion-gov p {
+    font-size: 0.76rem;
+    line-height: 1.35;
   }
 }
