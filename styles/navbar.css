@@ -45,6 +45,8 @@ body {
 .termair-dropdown-toggle {
   color: #9fe7f5;
   text-decoration: none;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 700;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -54,7 +56,6 @@ body {
   background: none;
   border: none;
   padding: 0;
-  font: inherit;
 }
 
 .termair-nav-menu a:hover,
@@ -83,6 +84,8 @@ body {
 .termair-dropdown-menu a {
   display: block;
   padding: 10px 20px;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 700;
   font-size: 0.85rem;
   color: #9fe7f5;
 }
