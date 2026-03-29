@@ -82,3 +82,85 @@
     font-size: 1.8rem;
   }
 }
+
+/* =========================
+   FORMULARIO CONTACTO
+========================= */
+
+.termair-contacto-form {
+  margin-top: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.termair-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* FILAS */
+.termair-form-row {
+  display: flex;
+  gap: 15px;
+}
+
+/* INPUTS Y TEXTAREA */
+.termair-form input,
+.termair-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-family: 'Stolzl', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+
+/* HOVER / FOCUS */
+.termair-form input:focus,
+.termair-form textarea:focus {
+  outline: none;
+  border-color: #419ebd;
+  box-shadow: 0 0 0 2px rgba(65, 158, 189, 0.15);
+}
+
+/* TEXTAREA */
+.termair-form textarea {
+  resize: none;
+}
+
+/* BOTÓN */
+.termair-contacto-btn {
+  align-self: center;
+  padding: 14px 28px;
+  background-color: #ffa900;
+  color: #ffffff;
+  border: none;
+  border-radius: 0px; /* rectangular, no pill */
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover más sólido (no gradiente) */
+.termair-contacto-btn:hover {
+  background-color: #e69500;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .termair-form-row {
+    flex-direction: column;
+  }
+
+  .termair-contacto-form {
+    margin-top: 40px;
+  }
+}

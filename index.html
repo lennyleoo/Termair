@@ -349,7 +349,35 @@
 
         </div>
 
+         <div class="termair-contacto-form">
+      <form action="contacto.php" method="POST" class="termair-form">
+
+        <div class="termair-form-row">
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <input type="text" name="apellido" placeholder="Apellido" required>
+        </div>
+
+        <div class="termair-form-row">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="telefono" placeholder="Teléfono" required>
+        </div>
+
+        <div class="termair-form-row">
+          <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="termair-contacto-btn">
+          Enviar consulta
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+
       </div>
+
+
     </section>
 
   </main>
