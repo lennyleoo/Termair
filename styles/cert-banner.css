@@ -7,22 +7,6 @@
   font-family: 'Stolzl', sans-serif;
 }
 
-.termair-cert-banner-title {
-  font-family: 'Zalando Sans SemiExpanded', sans-serif;
-  font-weight: 800;
-}
-
-.termair-cert-banner-text {
-  font-family: 'Stolzl', sans-serif;
-  font-weight: 400;
-}
-
-.termair-cert-banner-btn {
-  font-family: 'Stolzl', sans-serif;
-  font-weight: 500;
-  border-radius: 0 !important ;
-}
-
 .termair-cert-banner-container {
   max-width: 1180px;
   margin: 0 auto;
@@ -37,12 +21,18 @@
   max-width: 760px;
 }
 
+/* =========================
+   TIPOGRAFÍA
+========================= */
+
 .termair-cert-banner-title {
   margin: 0 0 14px 0;
   color: #063f5c;
   font-size: 2.2rem;
   line-height: 1.12;
   text-transform: uppercase;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 800;
 }
 
 .termair-cert-banner-text {
@@ -51,7 +41,13 @@
   font-size: 1.08rem;
   line-height: 1.6;
   max-width: 720px;
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
 }
+
+/* =========================
+   BOTÓN (igual a innovación)
+========================= */
 
 .termair-cert-banner-action {
   flex-shrink: 0;
@@ -61,17 +57,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 230px;
-  padding: 15px 28px;
+  min-width: 235px;
+  padding: 18px 34px;
   background-color: #ffa900;
   color: #063f5c;
   text-decoration: none;
-  font-size: 0.9rem;
-  
+  font-size: 1rem;
   letter-spacing: 0.8px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 0;
   transition: all 0.3s ease;
+  font-family: 'Stolzl', sans-serif;
 }
 
 .termair-cert-banner-btn:hover {
@@ -80,12 +76,27 @@
   transform: translateY(-2px);
 }
 
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width: 991px) {
   .termair-cert-banner-container {
     padding: 0 30px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 24px;
+  }
+
+  .termair-cert-banner-content {
+    max-width: 100%;
+  }
+
+  .termair-cert-banner-action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .termair-cert-banner-title {
@@ -94,8 +105,17 @@
 
   .termair-cert-banner-text {
     font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .termair-cert-banner-btn {
+    min-width: 220px;
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 576px) {
   .termair-cert-banner {
@@ -114,8 +134,16 @@
     font-size: 0.96rem;
   }
 
-  .termair-cert-banner-btn {
+  .termair-cert-banner-action {
     width: 100%;
-    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .termair-cert-banner-btn {
+    width: auto;
+    min-width: 220px;
+    padding: 16px 22px;
+    font-size: 0.95rem;
   }
 }
