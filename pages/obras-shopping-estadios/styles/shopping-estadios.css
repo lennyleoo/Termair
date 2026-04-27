@@ -1,0 +1,149 @@
+.galeria-termair-ent {
+  font-family: 'Stolzl', sans-serif;
+  padding: 140px 20px 40px;
+  background-color: #f9f9f9;
+}
+
+.galeria-titulo-ent {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  text-align: center;
+  color: #063f5c;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.galeria-subtitulo-ent {
+  font-family: 'Stolzl', sans-serif;
+  text-align: center;
+  color: #419ebd;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.galeria-subtitulo-ent::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffa900;
+  margin: 15px auto 0;
+}
+
+.grid-obras-ent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.obra-card-ent {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: 250px;
+  background-color: #063f5c;
+  transition: transform 0.3s ease;
+}
+
+.obra-card-ent:hover {
+  transform: translateY(-5px);
+}
+
+.obra-card-ent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.obra-card-ent:hover img {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+.obra-info-ent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(6, 63, 92, 0.9));
+  color: white;
+  transform: translateY(20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
+}
+
+.obra-card-ent:hover .obra-info-ent {
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.obra-nombre-ent {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-left: 3px solid #f27f0c;
+  padding-left: 10px;
+}
+
+.obra-categoria-ent {
+  font-family: 'Stolzl', sans-serif;
+  font-size: 0.8rem;
+  color: #9fe7f5;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.obra-descripcion-ent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.obra-card-ent:hover .obra-descripcion-ent {
+  opacity: 1;
+}
+
+.obra-descripcion-ent p {
+  margin: 0;
+  font-family: 'Stolzl', sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .galeria-termair-ent {
+    padding: 120px 16px 36px;
+  }
+
+  .galeria-titulo-ent {
+    font-size: 1.8rem;
+  }
+
+  .grid-obras-ent {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .obra-descripcion-ent {
+    width: calc(100% - 30px);
+  }
+
+  .obra-descripcion-ent p {
+    font-size: 0.76rem;
+    line-height: 1.35;
+  }
+}

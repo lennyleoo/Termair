@@ -28,9 +28,8 @@
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  background-image: url('../img/FONDOescr.jpg');
+  background-image: url('../img/BannerCorrec2.jpg');
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -164,4 +163,9 @@
   .termair-hero-btn {
     padding: 12px 24px;
   }
+}
+
+.termair-hero-highlight {
+  font-weight: 700; 
+  color: inherit; 
 }
