@@ -142,7 +142,11 @@
   background-image: url('../../../img/piedradelaguila.jpg');
 }
 
-.obra-card-entretenimiento {
+.obra-card-shopping-estadios {
+  background-image: url('../../../img/unicenter\ \(1\).jpg');
+}
+
+.obra-card-hoteles-teatros {
   background-image: url('../../../img/TeatroColon.jpg');
 }
 
