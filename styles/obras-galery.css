@@ -84,11 +84,27 @@
   max-width: 520px;
 }
 
+/* =========================
+   CARRUSEL
+========================= */
+
+.termair-obras-carousel {
+  position: relative;
+  overflow: visible;
+}
+
+.termair-obras-carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
 .termair-obras-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 42px) / 4);
   gap: 14px;
   align-items: stretch;
+  overflow: visible;
 }
 
 .termair-obra-card {
@@ -159,13 +175,58 @@
   transform: translateX(2px);
 }
 
+/* =========================
+   FLECHAS
+========================= */
+
+.termair-obras-arrow {
+  position: absolute;
+  top: 38%;
+  z-index: 20;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(10, 66, 96, 0.14);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.98);
+  color: #0a4260;
+  font-size: 30px;
+  line-height: 34px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.termair-obras-arrow-left {
+  left: -48px;
+}
+
+.termair-obras-arrow-right {
+  right: -48px;
+}
+
+.termair-obras-arrow:hover {
+  background: #0a4260;
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.04);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 1180px) {
   .termair-obras-gallery {
     padding: 36px 0 26px;
   }
 
   .termair-obras-gallery-container {
-    padding: 0 30px;
+    padding: 0 54px;
   }
 
   .termair-obras-gallery-header {
@@ -185,14 +246,26 @@
   }
 
   .termair-obras-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-columns: calc((100% - 32px) / 3);
     gap: 16px;
+  }
+
+  .termair-obras-arrow-left {
+    left: -44px;
+  }
+
+  .termair-obras-arrow-right {
+    right: -44px;
   }
 }
 
 @media (max-width: 900px) {
+  .termair-obras-gallery-container {
+    padding: 0 48px;
+  }
+
   .termair-obras-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-columns: calc((100% - 16px) / 2);
     gap: 16px;
   }
 
@@ -202,6 +275,18 @@
 
   .termair-obra-name {
     font-size: 20px;
+  }
+
+  .termair-obras-arrow {
+    top: 36%;
+  }
+
+  .termair-obras-arrow-left {
+    left: -40px;
+  }
+
+  .termair-obras-arrow-right {
+    right: -40px;
   }
 }
 
@@ -230,8 +315,12 @@
   }
 
   .termair-obras-grid {
-    grid-template-columns: 1fr;
+    grid-auto-columns: 100%;
     gap: 18px;
+  }
+
+  .termair-obras-arrow {
+    display: none;
   }
 
   .termair-obra-thumb-wrap {
