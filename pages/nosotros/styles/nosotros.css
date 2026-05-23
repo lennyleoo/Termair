@@ -3,208 +3,307 @@
 ========================= */
 .nosotros-page {
   font-family: 'Stolzl', sans-serif;
-  color: #555;
-  background: #f7f7f7;
+  color: #4f4f4f;
+  background: #ececec;
+  padding-top: 82px;
 }
 
-.nosotros-main-title,
-.nosotros-card-content h2,
-.nosotros-section-heading h2 {
+.nosotros-page h1,
+.nosotros-page h2,
+.nosotros-page h3 {
   font-family: 'Zalando Sans SemiExpanded', sans-serif;
 }
 
-/* =========================
-   LAYOUT
-========================= */
+.nosotros-page p {
+  margin: 0;
+}
+
 .nosotros-shell {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 44px;
   box-sizing: border-box;
 }
 
 .nosotros-kicker {
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  margin: 0 0 10px;
   color: #ffa900;
-  margin-bottom: 10px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 /* =========================
-   HERO
-========================= */
-.nosotros-hero {
-  background:
-    linear-gradient(135deg, rgba(6, 63, 92, 0.95), rgba(6, 63, 92, 0.8)),
-    url('../../../img/fachada.jpg') ;
-    background-position: 80% 80%;
-}
-
-.nosotros-hero-content {
-  padding: 150px 0 90px;
-}
-
-.nosotros-main-title {
-  color: #fff;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 800;
-  max-width: 800px;
-  line-height: 1.1;
-  margin: 0;
-}
-
-.nosotros-lead {
-  color: rgba(255,255,255,0.9);
-  margin: 20px 0 0;
-  max-width: 700px;
-  line-height: 1.7;
-  font-size: 1rem;
-}
-
-/* =========================
-   INTRO
+   INTRO SUPERIOR / BANNER
 ========================= */
 .nosotros-intro {
-  margin-top: -30px;
+  background: #ececec;
+  padding: 42px 0 55px;
 }
 
-.nosotros-intro-box {
-  background: #fff;
-  padding: 25px 30px;
-  border-radius: 16px;
-  border-top: 4px solid #ffa900;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-/* =========================
-   GRID
-========================= */
-.nosotros-sections {
-  padding: 60px 0;
-}
-
-.nosotros-grid {
+.nosotros-intro-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 30px;
+  align-items: center;
 }
 
-/* =========================
-   CARD
-========================= */
-.nosotros-card {
-  background: #fff;
-  border-radius: 16px;
+.nosotros-intro-image {
+  width: 100%;
+  height: 315px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
 }
 
-.nosotros-card-image {
-  height: 140px;
-}
-
-.nosotros-card-image img {
+.nosotros-intro-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
 }
 
-.nosotros-card-content {
-  padding: 20px;
+.nosotros-intro-content {
+  max-width: 610px;
 }
 
-.nosotros-card-content h2 {
-  font-size: 1.2rem;
-  color: #063f5c;
-  margin: 0 0 10px;
+.nosotros-intro-content h1 {
+  margin: 0 0 34px;
+  color: #4c4c4c;
+  font-size: clamp(1.6rem, 2.3vw, 2.05rem);
+  font-weight: 700;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.nosotros-intro-content p {
+  max-width: 560px;
+  color: #5b5b5b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.32;
+}
+
+.nosotros-intro-content p + p {
+  margin-top: 22px;
+}
+
+.nosotros-intro-content strong {
+  color: #4f4f4f;
+  font-weight: 500;
+}
+
+/* =========================
+   BLOQUE AÉREO
+========================= */
+.nosotros-aerea {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.nosotros-aerea-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('../../../img/aerea.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.nosotros-aerea::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.46);
+}
+
+.nosotros-aerea-grid {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.nosotros-aerea-text h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
   font-weight: 800;
+  line-height: 1.15;
+}
+
+.nosotros-aerea-text h2 span {
+  font-family: 'Stolzl', sans-serif;
+  font-weight: 400;
+}
+
+.nosotros-aerea-text p:not(.nosotros-kicker) {
+  max-width: 430px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* =========================
+   EXPERIENCIA
+========================= */
+.nosotros-experiencia {
+  background: #ffffff;
+  padding: 42px 0 36px;
+}
+
+.nosotros-experiencia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 75px;
+  align-items: start;
+}
+
+.nosotros-experiencia h2 {
+  margin: 0 0 8px;
+  color: #063f5c;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.nosotros-experiencia p {
+  max-width: 530px;
+  color: #063f5c;
+  font-size: 0.98rem;
   line-height: 1.2;
 }
 
-.nosotros-card-content p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin: 0 0 12px;
-}
-
-.nosotros-card-content p:last-child {
-  margin-bottom: 0;
-}
-
-/* =========================
-   LISTA
-========================= */
-.nosotros-list {
-  margin: 10px 0 14px;
-  padding-left: 18px;
-}
-
-.nosotros-list li {
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-  line-height: 1.5;
+.nosotros-experiencia h3 {
+  margin: 0;
+  color: #419ebd;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.12;
 }
 
 /* =========================
-   CAPACIDAD
+   CAPACIDAD OPERATIVA
 ========================= */
 .nosotros-capacidad {
-  padding-bottom: 70px;
-}
-
-.nosotros-capacidad-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  border-left: 4px solid #ffa900;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  background: #ececec;
+  padding: 52px 0 48px;
 }
 
 .nosotros-section-heading h2 {
-  color: #063f5c;
-  font-size: 1.6rem;
-  margin: 0 0 15px;
+  margin: 0 0 14px;
+  color: #4c4c4c;
+  font-size: clamp(1.5rem, 2.1vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
 }
 
-.nosotros-body-text {
-  line-height: 1.7;
-  margin: 0 0 14px;
+.nosotros-section-heading p {
+  max-width: 1080px;
+  color: #5b5b5b;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.nosotros-capacidad-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+}
+
+.nosotros-capacidad-item {
+  min-width: 0;
+}
+
+.nosotros-capacidad-item img {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+}
+
+.nosotros-capacidad-item h3 {
+  margin: 11px 0 0;
+  color: #063f5c;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* =========================
-   TAGS
+   EQUIPO FINAL
 ========================= */
-.nosotros-tags {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.nosotros-equipo {
+  background: #ececec;
+  padding: 20px 0 122px;
 }
 
-.nosotros-tags span {
-  background: rgba(6,63,92,0.08);
+.nosotros-equipo h2 {
+  max-width: 1070px;
+  margin: 0 0 12px;
   color: #063f5c;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: clamp(1.45rem, 2.45vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.nosotros-equipo p:not(.nosotros-kicker) {
+  max-width: 1110px;
+  color: #063f5c;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.nosotros-equipo-image {
+  margin-top: 28px;
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+}
+
+.nosotros-equipo-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* =========================
    TABLET
 ========================= */
 @media (max-width: 1024px) {
-  .nosotros-hero-content {
-    padding: 140px 0 80px;
+  .nosotros-shell {
+    padding: 0 30px;
   }
 
-  .nosotros-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .nosotros-intro-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .nosotros-intro-image {
+    height: 285px;
+  }
+
+  .nosotros-aerea-grid {
+    gap: 45px;
+  }
+
+  .nosotros-experiencia-grid {
+    gap: 42px;
+  }
+
+  .nosotros-capacidad-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nosotros-capacidad-item img {
+    height: 210px;
   }
 }
 
@@ -212,74 +311,80 @@
    MOBILE
 ========================= */
 @media (max-width: 768px) {
+  .nosotros-page {
+    padding-top: 72px;
+  }
+
   .nosotros-shell {
-    padding: 0 18px;
-  }
-
-  .nosotros-hero {
-    background-position: center;
-  }
-
-  .nosotros-hero-content {
-    padding: 120px 0 55px;
-  }
-
-  .nosotros-main-title {
-    font-size: 1.9rem;
-    line-height: 1.15;
-    max-width: 100%;
-  }
-
-  .nosotros-lead {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    max-width: 100%;
+    padding: 0 22px;
   }
 
   .nosotros-intro {
-    margin-top: -18px;
+    padding: 30px 0 38px;
   }
 
-  .nosotros-intro-box {
-    padding: 20px 18px;
-    border-radius: 14px;
-  }
-
-  .nosotros-sections {
-    padding: 40px 0;
-  }
-
-  .nosotros-grid {
+  .nosotros-intro-grid,
+  .nosotros-aerea-grid,
+  .nosotros-experiencia-grid {
     grid-template-columns: 1fr;
   }
 
-  .nosotros-card-image {
-    height: 180px;
+  .nosotros-intro-image {
+    height: 240px;
   }
 
-  .nosotros-card-content {
-    padding: 18px;
+  .nosotros-intro-content h1 {
+    margin-bottom: 22px;
+    font-size: 1.45rem;
   }
 
-  .nosotros-card-content h2 {
-    font-size: 1.1rem;
+  .nosotros-intro-content p {
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+
+  .nosotros-aerea,
+  .nosotros-aerea-grid {
+    min-height: auto;
+  }
+
+  .nosotros-aerea-grid {
+    padding-top: 80px;
+    padding-bottom: 58px;
+    gap: 28px;
+  }
+
+  .nosotros-aerea-text p:not(.nosotros-kicker) {
+    max-width: 100%;
+  }
+
+  .nosotros-experiencia {
+    padding: 36px 0;
+  }
+
+  .nosotros-experiencia-grid {
+    gap: 28px;
   }
 
   .nosotros-capacidad {
-    padding-bottom: 50px;
+    padding: 42px 0;
   }
 
-  .nosotros-capacidad-box {
-    padding: 20px;
+  .nosotros-capacidad-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 18px;
   }
 
-  .nosotros-section-heading h2 {
-    font-size: 1.4rem;
+  .nosotros-capacidad-item img {
+    height: 185px;
   }
 
-  .nosotros-tags span {
-    width: 100%;
-    text-align: center;
+  .nosotros-equipo {
+    padding: 10px 0 70px;
+  }
+
+  .nosotros-equipo-image {
+    height: 280px;
   }
 }
 
@@ -287,25 +392,23 @@
    MOBILE SMALL
 ========================= */
 @media (max-width: 480px) {
-  .nosotros-hero-content {
-    padding: 110px 0 45px;
+  .nosotros-shell {
+    padding: 20px 18px;
   }
 
-  .nosotros-main-title {
-    font-size: 1.6rem;
-    line-height: 1.15;
+  .nosotros-intro-image {
+    height: 210px;
   }
 
-  .nosotros-lead {
-    font-size: 0.9rem;
-    line-height: 1.55;
+  .nosotros-capacidad-grid {
+    grid-template-columns: 1fr;
   }
 
-  .nosotros-card-image {
-    height: 160px;
+  .nosotros-capacidad-item img {
+    height: 220px;
   }
 
-  .nosotros-section-heading h2 {
-    font-size: 1.35rem;
+  .nosotros-equipo-image {
+    height: 230px;
   }
 }
