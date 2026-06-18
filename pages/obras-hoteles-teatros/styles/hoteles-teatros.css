@@ -1,6 +1,6 @@
 .galeria-termair-ent {
   font-family: 'Stolzl', sans-serif;
-  padding: 140px 20px 40px;
+  padding: 140px 20px 90px;
   background-color: #f9f9f9;
 }
 
@@ -18,7 +18,7 @@
   font-family: 'Stolzl', sans-serif;
   text-align: center;
   color: #419ebd;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -32,118 +32,149 @@
   margin: 15px auto 0;
 }
 
-.grid-obras-ent {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .obra-card-ent {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1fr;
+  height: 360px;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  height: 250px;
+  border-radius: 14px;
   background-color: #063f5c;
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .obra-card-ent:hover {
   transform: translateY(-5px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.16);
 }
 
-.obra-card-ent img {
+.obra-img-ent {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease, opacity 0.3s ease;
+  height: 360px;
+  overflow: hidden;
 }
 
-.obra-card-ent:hover img {
-  transform: scale(1.1);
-  opacity: 0.4;
+.obra-img-ent img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.45s ease;
+}
+
+.obra-card-ent:hover .obra-img-ent img {
+  transform: scale(1.05);
 }
 
 .obra-info-ent {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(transparent, rgba(6, 63, 92, 0.9));
-  color: white;
-  transform: translateY(20px);
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  z-index: 2;
-}
-
-.obra-card-ent:hover .obra-info-ent {
-  transform: translateY(0);
-  opacity: 0;
+  padding: 30px;
+  background: #063f5c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .obra-nombre-ent {
   font-family: 'Zalando Sans SemiExpanded', sans-serif;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  border-left: 3px solid #f27f0c;
-  padding-left: 10px;
+  border-left: 4px solid #f27f0c;
+  padding-left: 12px;
 }
 
 .obra-categoria-ent {
   font-family: 'Stolzl', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: #9fe7f5;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin: 10px 0 18px;
+  letter-spacing: 1px;
 }
 
 .obra-descripcion-ent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: calc(100% - 40px);
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  pointer-events: none;
-}
-
-.obra-card-ent:hover .obra-descripcion-ent {
-  opacity: 1;
+  width: 100%;
 }
 
 .obra-descripcion-ent p {
   margin: 0;
   font-family: 'Stolzl', sans-serif;
-  font-size: 0.82rem;
-  line-height: 1.45;
+  font-size: 0.84rem;
+  line-height: 1.55;
   color: #ffffff;
+}
+
+.obra-card-ent + .obra-card-ent {
+  margin-top: 90px;
+}
+
+@media (max-width: 900px) {
+  .obra-card-ent {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .obra-img-ent,
+  .obra-img-ent img {
+    height: 250px;
+  }
+
+  .obra-info-ent {
+    padding: 24px;
+  }
+
+  .obra-card-ent + .obra-card-ent {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .galeria-termair-ent {
-    padding: 120px 16px 36px;
+    padding: 120px 16px 50px;
   }
 
   .galeria-titulo-ent {
     font-size: 1.8rem;
   }
 
-  .grid-obras-ent {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  .galeria-subtitulo-ent {
+    margin-bottom: 45px;
   }
 
-  .obra-descripcion-ent {
-    width: calc(100% - 30px);
+  .obra-card-ent + .obra-card-ent {
+    margin-top: 50px;
+  }
+
+  .obra-img-ent,
+  .obra-img-ent img {
+    height: 220px;
   }
 
   .obra-descripcion-ent p {
-    font-size: 0.76rem;
-    line-height: 1.35;
+    font-size: 0.78rem;
+    line-height: 1.45;
   }
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.image-lightbox.is-open {
+  display: flex;
+}
+
+.image-lightbox-img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
 }
