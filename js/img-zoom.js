@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const images = document.querySelectorAll('.obra-img-ent img');
+  const images = document.querySelectorAll( '.obra-img-ent img, .obra-img-hidro img, .obra-img img');
 
   const modal = document.createElement('div');
   modal.className = 'image-lightbox';
