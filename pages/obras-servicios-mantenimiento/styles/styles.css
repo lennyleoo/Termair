@@ -1,0 +1,103 @@
+.galeria-termair-mant {
+  font-family: 'Stolzl', sans-serif;
+  padding: 140px 20px 90px;
+  background-color: #f9f9f9;
+}
+
+.galeria-titulo-mant {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  text-align: center;
+  color: #063f5c;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.galeria-subtitulo-mant {
+  font-family: 'Stolzl', sans-serif;
+  text-align: center;
+  color: #419ebd;
+  margin-bottom: 70px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.galeria-subtitulo-mant::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffa900;
+  margin: 15px auto 0;
+}
+
+.grid-mantenimiento {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.mant-card {
+  background-color: #063f5c;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 34px 38px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid #f27f0c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.16);
+}
+
+.mant-card h2 {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  margin: 0 0 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.mant-card p {
+  font-family: 'Stolzl', sans-serif;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #ffffff;
+}
+
+.mant-card p + p {
+  margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+  .galeria-termair-mant {
+    padding: 120px 16px 50px;
+  }
+
+  .galeria-titulo-mant {
+    font-size: 1.8rem;
+  }
+
+  .galeria-subtitulo-mant {
+    margin-bottom: 45px;
+  }
+
+  .mant-card {
+    padding: 26px 24px;
+  }
+
+  .mant-card h2 {
+    font-size: 1rem;
+  }
+
+  .mant-card p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
