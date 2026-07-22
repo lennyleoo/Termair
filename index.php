@@ -443,9 +443,17 @@ $_SESSION['contact_form_loaded_at'] = time();
       <form action="contacto/procesar.php" method="POST" class="termair-form" id="termairContactForm">
 
         <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['contact_csrf'], ENT_QUOTES, 'UTF-8') ?>">
-        <div class="termair-form-honeypot" aria-hidden="true">
-          <label for="website">No completar este campo</label>
-          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        <div
+          aria-hidden="true"
+          style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;"
+        >
+          <input
+            type="text"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+  >
+        </div>
         </div>
 
         <div class="termair-form-row">
