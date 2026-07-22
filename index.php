@@ -1,3 +1,18 @@
+<?php
+declare(strict_types=1);
+ini_set('session.use_strict_mode', '1');
+ini_set('session.use_only_cookies', '1');
+session_set_cookie_params([
+  'httponly' => true,
+  'secure' => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
+  'samesite' => 'Strict',
+]);
+session_start();
+if (empty($_SESSION['contact_csrf'])) {
+  $_SESSION['contact_csrf'] = bin2hex(random_bytes(32));
+}
+$_SESSION['contact_form_loaded_at'] = time();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -425,7 +440,13 @@
         </div>
 
          <div class="termair-contacto-form">
-      <form action="contacto.php" method="POST" class="termair-form">
+      <form action="contacto/procesar.php" method="POST" class="termair-form" id="termairContactForm">
+
+        <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['contact_csrf'], ENT_QUOTES, 'UTF-8') ?>">
+        <div class="termair-form-honeypot" aria-hidden="true">
+          <label for="website">No completar este campo</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
 
         <div class="termair-form-row">
           <input type="text" name="nombre" placeholder="Nombre" required>
@@ -441,7 +462,9 @@
           <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
         </div>
 
-        <button type="submit" class="termair-contacto-btn">
+        <div class="termair-form-feedback" id="termairFormFeedback" role="status" aria-live="polite"></div>
+
+        <button type="submit" class="termair-contacto-btn" id="termairContactSubmit">
           Enviar consulta
         </button>
 
@@ -493,6 +516,7 @@
 
   <script src="./js/navbar.js"></script>
   <script src="./js/obras-carousel.js"></script>
+  <script src="./js/contacto.js"></script>
 
 </body>
 </html>
