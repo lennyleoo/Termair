@@ -442,19 +442,24 @@ $_SESSION['contact_form_loaded_at'] = time();
          <div class="termair-contacto-form">
       <form action="contacto/procesar.php" method="POST" class="termair-form" id="termairContactForm">
 
-        <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['contact_csrf'], ENT_QUOTES, 'UTF-8') ?>">
-        <div
-          aria-hidden="true"
-          style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;"
+       <input
+  type="hidden"
+  name="csrf_token"
+  value="<?= htmlspecialchars($_SESSION['contact_csrf'], ENT_QUOTES, 'UTF-8') ?>"
+>
+
+      <div
+        aria-hidden="true"
+        style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;"
+      >
+        <input
+          type="text"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
         >
-          <input
-            type="text"
-            name="website"
-            tabindex="-1"
-            autocomplete="off"
-  >
-        </div>
-        </div>
+      </div>
+
 
         <div class="termair-form-row">
           <input type="text" name="nombre" placeholder="Nombre" required>
